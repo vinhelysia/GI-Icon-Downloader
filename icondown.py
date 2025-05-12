@@ -18,33 +18,37 @@ class GenshinIconDownloader:
         self.character_list = [
             # Mondstadt
             "albedo", "amber", "barbara", "bennett", "diluc", "diona", "eula",
-            "fischl", "jean", "klee", "mika", "mona", "noelle", "razor",
+            "fischl", "jean", "kaeya", "klee", "lisa", "mika", "mona", "noelle", "razor",
             "rosaria", "sucrose", "venti",
-            
+
             # Liyue
             "baizhu", "beidou", "chongyun", "gaming", "ganyu", "hu tao", "keqing",
-            "ningguang", "qiqi", "shenhe", "xiangling", "xiao", "xingqiu",
-            "xinyan", "yanfei", "yaoyao", "yelan", "yun jin", "zhongli",
-            
+            "lan yan", "ningguang", "qiqi", "shenhe", "xiangling", "xiao", "xingqiu",
+            "xinyan", "yanfei", "yaoyao", "yelan", "yun jin", "zhongli", "xianyun",
+
             # Inazuma
-            "arataki itto", "gorou", "kaedehara kazuha", "kamisato ayaka",
-            "kamisato ayato", "kujou sara", "kuki shinobu", "raiden shogun",
-            "sangonomiya kokomi", "sayu", "shikanoin heizou", "thoma",
-            "yae miko", "yoimiya",
-            
+            "arataki itto", "chiori", "gorou", "kaedehara kazuha", "kamisato ayaka",
+            "kamisato ayato", "kirara", "kujou sara", "kuki shinobu", "raiden shogun",
+            "sangonomiya kokomi", "sayu", "shikanoin heizou", "thoma", "yae miko", "yoimiya",
+            "yumemizuki mizuki",
+
             # Sumeru
-            "alhaitham", "candace", "collei", "cyno", "dehya", "dori",
-            "kaveh", "kirara", "nahida", "nilou", "tighnari",
-            
+            "alhaitham", "candace", "collei", "cyno", "dehya", "dori", "faruzan", "kaveh",
+            "layla", "nahida", "nilou", "sethos", "tighnari", "wanderer",
+
             # Fontaine
-            "charlotte", "chevreuse", "freminet", "furina", "lyney",
-            "lynette", "navia", "neuvillette", "wriothesley",
+            "charlotte", "chevreuse", "clorinde", "emilie", "escoffier", "freminet", "furina",
+            "lyney", "lynette", "navia", "neuvillette", "sigewinne", "wriothesley",
 
             # Natlan
-            "chasca", "mualani", "xilonen", "kinich", "ororon",
-            
+            "chasca", "citlali", "iansan", "ifa", "kachina", "kinich", "mavuika", "mualani",
+            "ororon", "varesa", "xilonen",
+
+            # Snezhnaya
+            "arlecchino", "tartaglia",
+
             # Others
-            "tartaglia", "wanderer", "arlecchino"
+            "aloy", "traveler"
         ]
         
         # Create main search frame
