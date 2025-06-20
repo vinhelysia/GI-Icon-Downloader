@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 from PIL import Image
 import io
 import os
+import sys
 from urllib.parse import quote
 import subprocess
 
@@ -226,15 +227,18 @@ class GenshinIconDownloader:
             return f"Error downloading item card: {str(e)}"
 
     def open_download_folder(self):
-        """Opens the items folder in file explorer"""
+        """Opens the items folder in the system's file explorer"""
         if not os.path.exists('items'):
             os.makedirs('items')
-        
-        # Open folder based on operating system
-        if os.name == 'nt':  # Windows
-            os.startfile('items')
-        else:  # macOS and Linux
-            subprocess.run(['xdg-open', 'items'])
+
+        path = os.path.abspath('items')
+
+        if sys.platform.startswith('win'):
+            os.startfile(path)
+        elif sys.platform == 'darwin':
+            subprocess.run(['open', path])
+        else:
+            subprocess.run(['xdg-open', path])
 
     def run(self):
         self.window.mainloop()
